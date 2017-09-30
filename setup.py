@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(name='python_resumable',
       version='0.1.0',
@@ -10,10 +10,7 @@ setup(name='python_resumable',
       license='MIT',
       keywords='resumablejs',
       install_requires=['natsort'],
-      url='',
-      package_dir={
-          'python_resumable': 'python_resumable',
-          'python_resumable.models': 'python_resumable/models'
-      },
-      packages=['python_resumable', 'python_resumable.models'],
+      python_requires='>=3',
+      url='https://github.com/Reriiru/python-resumable',
+      packages=find_packages(),
       )

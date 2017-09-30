@@ -9,3 +9,8 @@ testfiles
 
 #Cache
 __pycache__
+
+#Package
+dist
+build
+python_resumable.egg-info

@@ -1,0 +1,11 @@
+#Environment
+venv
+
+#Testing and mock
+testfiles
+
+#VSCode gubbins
+.vscode
+
+#Cache
+__pycache__

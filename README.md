@@ -4,7 +4,7 @@ Well, in order to explain what is Python-resumable we have to explain what is Re
 
 It has a universal hookup, that takes chunks as base64 strings, and currently it has a Flask-specific hookup that takes Flask file objects. We'd like to add Pyramid and Django hooks.
 
-##Instalation
+## Instalation
 
 Simple as that:
 
@@ -12,7 +12,7 @@ Simple as that:
 pip install python_resumable
 ```
 
-##Usage
+## Usage
 
 It's rather simple to use. It has to take 5 Resumable headers, your upload and tmp directory and file data as well.
 

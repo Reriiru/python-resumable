@@ -12,5 +12,10 @@ setup(name='python_resumable',
       install_requires=['natsort'],
       python_requires='>=3',
       url='https://github.com/Reriiru/python-resumable',
+
+      package_data={
+        '': ['*.txt', '*.rst', '*.md'],
+      },
+
       packages=find_packages(),
-      )
+)

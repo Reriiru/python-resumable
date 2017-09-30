@@ -1,10 +1,10 @@
-##Python-resumable
+## Python-resumable
 
 Well, in order to explain what is Python-resumable we have to explain what is ResumableJS. ResumableJS is a JavaScript library providing multiple simultaneous, stable and resumable uploads via the HTML5 File API. And python-resumable is a universal hookup for resumablejs. We'd like to create an interface that works regardless of which framework you use.
 
 It has a universal hookup, that takes chunks as base64 strings, and currently it has a Flask-specific hookup that takes Flask file objects. We'd like to add Pyramid and Django hooks.
 
-##Usage
+## Usage
 
 It's rather simple to use. It has to take 5 Resumable headers, your upload and tmp directory and file data as well.
 
@@ -73,7 +73,7 @@ def upload_file():
 
 Well... As simple as it could actually get with Resumable.
 
-##Mini-reference
+## Mini-reference
 
 This package provides you with two usable classes -- Uploader and FlaskUploader. They are essentially identical, except for the type of chunk-data they take.
 
@@ -100,6 +100,6 @@ Methods:
 Full reference can be found in docstrings.
 
 
-##Links
+## Links
 
 * [ResumableJS](http://www.resumablejs.com/)

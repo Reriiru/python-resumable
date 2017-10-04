@@ -33,11 +33,11 @@ def check_status():
     request = request
 
     resumable_dict = {
-        'resumableIdentifier': request.form.get('resumableIdentifier'),
-        'resumableFilename': request.form.get('resumableFilename'),
-        'resumableTotalSize': request.form.get('resumableTotalSize'),
-        'resumableTotalChunks': request.form.get('resumableTotalChunks'),
-        'resumableChunkNumber': request.form.get('resumableChunkNumber')
+        'resumableIdentifier': request.args.get('resumableIdentifier'),
+        'resumableFilename': request.args.get('resumableFilename'),
+        'resumableTotalSize': request.args.get('resumableTotalSize'),
+        'resumableTotalChunks': request.args.get('resumableTotalChunks'),
+        'resumableChunkNumber': request.args.get('resumableChunkNumber')
     }
 
     resumable = FlaskUploader(resumable_dict,

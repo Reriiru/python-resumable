@@ -43,7 +43,7 @@ def check_status():
     resumable = FlaskUploader(resumable_dict,
                               settings.UPLOAD_FOLDER_PROJECTS,
                               settings.UPLOAD_FOLDER_TMP,
-                              flask.request.files['file'])
+                              request.files['file'])
 
     if resumable.chunk.exists() is True:
         return jsonify({"chunkUploadStatus": True})
@@ -66,7 +66,7 @@ def upload_file():
     resumable = FlaskUploader(resumable_dict,
                               '/home/user/uploads',
                               '/home/user/tmp',
-                              flask.request.files['file'])
+                              request.files['file'])
 
     resumable.upload_chunk()
     

@@ -48,7 +48,7 @@ def check_status():
     if resumable.chunk.exists() is True:
         return jsonify({"chunkUploadStatus": True})
 
-    return jsonify({"chunkUploadStatus": False})
+    return jsonify({"chunkUploadStatus": False}), 204
 
 
 @app.route('/uploads', methods=['POST'])

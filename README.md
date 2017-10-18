@@ -30,8 +30,6 @@ app = Flask(__name__)
 def check_status():
     """This route works with get checks from resumable"""
 
-    request = request
-
     resumable_dict = {
         'resumableIdentifier': request.args.get('resumableIdentifier'),
         'resumableFilename': request.args.get('resumableFilename'),
@@ -53,7 +51,6 @@ def check_status():
 
 @app.route('/uploads', methods=['POST'])
 def upload_file():
-    request = request
 
     resumable_dict = {
         'resumableIdentifier': request.form.get('resumableIdentifier'),
